@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittest.loader._FailedTest-20240310165813" tests="1" file="unittest/loader.py" time="0.002" timestamp="2024-03-10T16:58:14" failures="0" errors="1" skipped="0">
+	<testcase classname="unittest.loader._FailedTest" name="helloworld_tests" time="0.002" timestamp="2024-03-10T16:58:14">
+		<error type="ImportError" message="Failed to import test module: helloworld_tests
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3.10/unittest/loader.py&quot;, line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File &quot;/mnt/c/Users/sreek/pyb-dev/src/unittest/python/helloworld_tests.py&quot;, line 1, in &lt;module&gt;
+    from mockito import mock, verify
+ModuleNotFoundError: No module named 'mockito'
+"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/usr/lib/python3.10/unittest/case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "/usr/lib/python3.10/unittest/case.py", line 549, in _callTestMethod
+    method()
+  File "/usr/lib/python3.10/unittest/loader.py", line 34, in testFailure
+    raise self._exception
+ImportError: Failed to import test module: helloworld_tests
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/unittest/loader.py", line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File "/mnt/c/Users/sreek/pyb-dev/src/unittest/python/helloworld_tests.py", line 1, in <module>
+    from mockito import mock, verify
+ModuleNotFoundError: No module named 'mockito'
+
+]]></error>
+	</testcase>
+</testsuite>
